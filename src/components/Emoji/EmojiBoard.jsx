@@ -88,7 +88,7 @@ const EmojiBoard = () => {
       </div>
       {emojiQueue.map(({ id, label, symbol, size, left, one, two }) => {
         return (
-          <AutoExpire>
+          <AutoExpire key={id}>
             <EmojiBubble
               key={id}
               label={label}
