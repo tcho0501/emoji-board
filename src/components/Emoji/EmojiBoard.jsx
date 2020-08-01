@@ -78,7 +78,7 @@ const EmojiBoard = () => {
           {emojis.map((emoji, i) => (
             <EmojiButton
               onClick={() => handleEmojiClick(emoji.label, emoji.symbol)}
-              onKeyDown={() => handleEmojiKeyDown()}
+              onKeyDown={() => handleEmojiKeyDown(emoji.label, emoji.symbol)}
               key={i}
             >
               <Emoji label={emoji.label} symbol={emoji.symbol} size="3rem" />
